@@ -14,7 +14,7 @@ header {
     grid-template-columns: 24px auto 44px;
     align-items: end;
     padding: 5px 0;
-    border-bottom: solid 1px #ddd;
+    border-bottom: white 1px solid;    
     column-gap: 8px;
     background: var(--pink-color);    
 }
