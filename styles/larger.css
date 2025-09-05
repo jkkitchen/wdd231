@@ -1,0 +1,61 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+            max-width: 900px;
+            margin: 0 110px;
+        }
+
+
+    /*-----NAVIGATION-----*/
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation a {
+        color: white;
+        border: none;
+    }
+
+    .navigation li.current {
+        background-color: var(--gray-color);
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        background: var(--green-color);
+        margin: 0;
+    }
+
+
+    /*-----MAIN CONTENT-----*/
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 2fr, 1fr;
+        grid-gap: 10px;
+    }
+
+    .about-me {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .photo {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .courses {
+        grid-column: 1/4;
+        grid-row: 2/3;
+
+    }
+}

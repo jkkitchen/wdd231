@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description" content="Course Home Page">
+    <!--Link to Google Fonts for Winky Sans and Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Winky+Sans:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <!--Link to CSS Files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Link to JS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/boxes.svg" alt="Site Logo" width="24px" height="24px">
+        <span>Jessica Kitchen</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="main-content">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <div id="about-me-div">
+                    <p>My name is Jessica Kitchen. I live in Greenville, South Carolina in the United States. I've been a stay
+                    at home mom for
+                    the last 11 years. I have a degree in chemical engineering from BYU, but I have always wanted to learn
+                    how to program
+                    and I'm hoping that a degree in software development will give me more flexible job options. On a more
+                    personal note, I
+                    love reading, running, and quilting, and I teach High Fitness (high-intensity aerobics class) at the
+                    YMCA!</p>
+                </div>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <div id="photo-div"><img src="images/student-photo.webp" alt="Student Photo"></div>
+            </section>
+            <section class="courses">
+                <h2>Web Certificate Courses</h2>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="github.com/jkkitchen"><img src="images/github.svg" alt="GitHub Logo" width="16px"
+                    height="16px"></a>
+            <a href="linkedin.com/in/jessica-kitchen-7183b9341"><img src="images/linkedin.svg" alt="Linked In Logo"
+                    width="16px" height="16px"></a>
+            <a href="facebook.com"><img src="images/facebook.svg" alt="Facebook Logo" width="16px" height="16px"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Jessica Kitchen | South Carolina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

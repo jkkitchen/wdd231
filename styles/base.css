@@ -1,0 +1,175 @@
+/*-----Global Attributes-----*/
+:root {
+    --header-font: "Winky Sans";
+    --text-font: "Inter";
+    --green-color: #0A5C2C;
+    --butterscotch-color: #E2B06A;
+    --gray-color: #2B292E;
+    --pink-color: #A02745;
+}
+
+/*-----Header-----*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background: var(--pink-color);    
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding:0 10px 3px 10px;
+}
+
+header span {
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    color: white;
+    padding: 0 10px;
+}
+
+/*-----Navigation-----*/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    font-family: var(--text-font);
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    text-decoration: none;
+    color: var(--teal-color);
+    border-bottom: solid 1px #ddd;
+    font-size: 1.3rem;
+    font-family: var(--text-font);
+}
+
+.navigation a:hover {
+    background-color: var(--gray-color);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    color: var(--gray-color);
+}
+
+.navigation li.current {
+    background-color: var(--butterscotch-color);
+}
+
+/*-----Main Section-----*/
+h1 {
+    font-family: var(--header-font);
+    color: var(--gray-color);
+    font-size: 3rem;    
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    margin: 5px 0;        
+}
+
+
+h2 {
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 2rem;
+    background: var(--green-color);
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.about-me, .photo, .courses {
+    background: var(--butterscotch-color);
+}
+
+p {
+    font-family: var(--text-font);
+    text-align: center;
+    color: var(--gray-color);
+    margin: 0;
+    padding: 10px;
+}
+
+.photo img {
+    height: 200px;
+    width: auto;
+    margin: 8px;
+    border: var(--gray-color) 2px solid
+}
+
+#photo-div {
+    display: flex;
+    justify-content: center;    
+}
+
+/*-----Footer-----*/
+footer {
+    background-color: var(--pink-color);
+    padding: 1rem 0;
+    text-align: center;    
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1px;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.icons a:hover {
+    background-color: var(--green-color);
+}
+
+.icons img {
+    width: 22px;
+    height: 22px;
+}
+
+footer p {
+    color: white;
+}
