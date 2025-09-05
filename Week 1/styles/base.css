@@ -8,6 +8,7 @@
 :root {
     --gray-color: #3C3E3E;
     --teal-color: #0D8274;
+    --dark-teal-color: #04433c;
 }
 
 /*-----HEADER-----*/
@@ -65,11 +66,16 @@ header span {
 }
 
 .navigation a {    
+    display: block;
+    padding: 0.8rem 10px;
     text-decoration: none;
     color: var(--teal-color);
+    border-bottom: solid 1px #ddd;
     font-size: 1.3rem;
-    height: 44px;
-    line-height: 44px;
+}
+
+.navigation a:hover {
+    background-color: var(--gray-color);
 }
 
 .navigation ul {
@@ -78,6 +84,48 @@ header span {
     padding: 0;
 }
 
-li {
-    margin-bottom: 8px;
+.navigation li.current {
+    background-color: #ddd;    
+}
+
+h1 {
+    margin-left: 10px;
+    color: var(--gray-color);
+}
+
+/*-----FOOTER-----*/
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: var(--gray-color) solid 1px;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.icons a:hover {
+    background-color: #ddd;
+}
+
+.icons img {
+    width: 22px;
+    height: 22px;
+}
+
+footer p {
+    color: var(--dark-teal-color);
 }
