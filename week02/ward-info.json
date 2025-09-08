@@ -1,0 +1,23 @@
+{
+    "familyName": "Wilkins",
+    "dateOfMoveIn": "12/3/24",
+    "numberOfRecords": 3,
+    "visitedByBishopbric": true,
+    "individualFamilyData": [
+        {
+            "name": "Jill Ann Wilkins",
+            "gender": "Female",
+            "birthdate": "6/8/86"
+        },
+        {
+            "name": "John Paul Wilkins",
+            "gender": "Male",
+            "birthdate": "9/12/86"
+        },
+        {
+            "name": "Millie Mae Wilkins",
+            "gender": "Female",
+            "birthdate": "3/25/2009"
+        }
+    ]
+}
