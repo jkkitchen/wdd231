@@ -1,0 +1,48 @@
+/*-----Global Attributes-----*/
+:root {
+    --font-color: #1c266d;
+    --background-color: #b3b9ea;
+    --header-font: "DM Serif Text";
+    --text-font: "Noto Sans";
+}
+
+/*-----Header-----*/
+h1 {
+    color: var(--font-color);
+    font-family: var(--header-font);
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));      
+}
+
+section {
+    background: var(--background-color);
+    border: var(--font-color) 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h2 {
+    color: var(--font-color);
+    font-family: var(--header-font);
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: var(--text-font);
+    margin: 0;    
+    
+}
+
+img {
+    max-height: 300px;
+    width: auto;
+    box-shadow: 0 0 10px 3px #777;
+    margin: 15px 0;      
+}
+
