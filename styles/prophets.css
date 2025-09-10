@@ -13,6 +13,7 @@ h1 {
     text-align: center;
 }
 
+/*-----Main-----*/
 #cards {
     display: grid;
     grid-gap: 10px;
@@ -44,5 +45,15 @@ img {
     width: auto;
     box-shadow: 0 0 10px 3px #777;
     margin: 15px 0;      
+}
+
+/*-----Footer-----*/
+footer {
+        display: flex;
+        justify-content: center;
+        color: var(--font-color);
+        font-family: var(--header-font);
+        margin: 5px;        
+        font-size: 1.5rem;
 }
 
