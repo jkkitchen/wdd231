@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Prisma Health",
+            "address": "300 E McBee Ave, Greenville, SC 29601",
+            "phonenumber": "(864) 455-7000",
+            "websiteurl": "prismahealth.org",
+            "image": "images/prisma-health.webp",
+            "industry": "Healthcare"
+        },
+        {
+            "name": "Michelin",
+            "address": "1 Parkway S, Greenville, SC 29615",
+            "phonenumber": "(864) 458-5000",
+            "websiteurl": "michelinman.com",
+            "image": "images/michelin.webp",
+            "industry": "Manufacturing"
+        },
+        {
+            "name": "BMW",
+            "address": "1400 SC-101, Greer, SC 29651",
+            "phonenumber": "(864) 802-6000",
+            "websiteurl": "bmwgroup.com",
+            "image": "images/bmw.webp",
+            "industry": "Automotive"
+        },
+        {
+            "name": "GE Power",
+            "address": "300 Garlington Road, Greenville, SC 29615",
+            "phonenumber": "(864) 456-3333",
+            "websiteurl": "gevernova.com",
+            "image": "images/GE.webp",
+            "industry": "Manufacturing"
+        },
+        {
+            "name": "Fluor",
+            "address": "100 Fluor Daniel Dr, Greenville, SC 29607",
+            "phonenumber": "(864) 281-4400",
+            "websiteurl": "fluor.com",
+            "image": "images/fluor.webp",
+            "industry": "Engineering"
+        },
+        {
+            "name": "Bosch",
+            "address": "3 Research Dr Suite 230, Greenville, SC 29607",
+            "phonenumber": "(864) 967-2777",
+            "websiteurl": "boschrexroth.com/en/dc/",
+            "image": "images/bosch.webp",
+            "industry": "Manufacturing"
+        },
+        {
+            "name": "Magna",
+            "address": "120 Moon Acres Rd, Piedmont, SC 29673",
+            "phonenumber": "(864) 277-4200",
+            "websiteurl": "magna.com",
+            "image": "images/magna.webp",
+            "industry": "Manufacturing"
+        }
+    ]
+}

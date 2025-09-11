@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenville Chamber of Commerce Directory</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description" content="A webapge listing businesses and contact information for chamber of commerce members in Greenville, SC.">
+    <!--Link to Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+    <!--Facebook Meta Tags-->
+    <meta property="og:title" content="Greenville Chamber of Commerce Member Directory">
+    <meta property="og:description" content="A webapge showing the contact information for local businesses in Greenville, SC.">
+    <meta property="og:image" content="#">
+    <meta propery="og:url" content="#">
+    <!--Link to Google Fonts-->
+
+    <!--Link to CSS Files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Link to JS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="chamber-header">
+        <img src="images/favicon.ico" alt="Site Logo" width="24" height="24">
+        <h1>Greenville Chamber of Commerce</h1>
+        <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
+    </div>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="display-buttons">
+            <button id="cards-btn" class="button" aria-label="Display Business Cards Button">Grid View</button>
+            <button id="list-btn" class="button" aria-label="Display List of Businesses Button">List View</button>
+        </div>
+        <div class="business-display"></div>
+    </main>
+    <footer>
+        <div class="chamber-contact-info">
+            <p>Greenville Chamber of Commerce</p>
+            <address>
+                550 S Main Street<br>
+                Greenville, SC 29601
+            </address>            
+            <a href="mailto:info@greenvillechamber.com">info@greenvillechamber.com</a>
+            <a href="tel:+8642421050">(864) 242-1050</a>
+        </div>
+        <div class="icons">
+            <a href="instagram.com"><img src="images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="Linked In Logo" width="16" height="16"></a>
+            <a href="facebook.com"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
+        </div>
+        <div class="wdd231-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jessica Kitchen</p>
+            <p>&copy;<span id="currentyear"></span> Greenville Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
