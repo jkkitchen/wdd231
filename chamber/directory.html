@@ -14,7 +14,10 @@
     <meta property="og:image" content="#">
     <meta propery="og:url" content="#">
     <!--Link to Google Fonts-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans&display=swap"
+        rel="stylesheet">
     <!--Link to CSS Files-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -26,24 +29,26 @@
 </head>
 <body>
     <header>
-    <div class="chamber-header">
-        <img src="images/favicon.ico" alt="Site Logo" width="24" height="24">
-        <h1>Greenville Chamber of Commerce</h1>
-        <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
-    </div>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
-        </ul>
-    </nav>
+        <div class="chamber-header">
+            <div class="logo-header">
+                <img src="images/favicon.ico" alt="Site Logo" width="24" height="24">
+                <h1>Greenville Chamber of Commerce</h1>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="display-buttons">
-            <button id="cards-btn" class="button" aria-label="Display Business Cards Button">Grid View</button>
-            <button id="list-btn" class="button" aria-label="Display List of Businesses Button">List View</button>
+            <button id="cards-btn" class="button" aria-label="Display Business Cards Button">Grid</button>
+            <button id="list-btn" class="button" aria-label="Display List of Businesses Button">List</button>
         </div>
         <div class="business-display"></div>
     </main>

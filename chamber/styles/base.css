@@ -1,0 +1,186 @@
+:root {
+    --heading-font: 'Newsreader';
+    --text-font: 'Noto Sans';
+    --main-color: #D5f5E7;
+    --accent-color: #666A70;
+    --text-color: black;
+}
+
+/*-----HEADER-----*/
+.chamber-header {
+    background: var(--main-color);    
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-style: var(--heading-font);
+}
+
+.logo-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-header img {
+    display: block;
+    margin: auto 5px;
+}
+
+/*-----Navigation-----*/
+.hamburger {
+    background: var(--accent-color);
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    font-family: var(--text-font);
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 1px #ddd;
+    font-size: 1.3rem;
+    font-family: var(--text-font);
+}
+
+.navigation a:hover {
+    background-color: var(--pink-color);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    color: var(--gray-color);
+}
+
+.navigation li.current {
+    background-color: #ddd;
+}
+
+/*-----Main-----*/
+.display-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;    
+}
+
+.button {
+    margin: 5px;
+    width: 20%;
+    font-family: var(--text-font);
+    padding: 7px;
+    background: var(--accent-color);
+    color: white;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;    
+    font-family: var(--text-font);
+    border: var(--accent-color) 1px solid;
+    box-shadow: 0 3px 3px #777;    
+}
+
+.business-card h2 {    
+    margin: 8px 0;    
+}
+
+.logo-and-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 3px 3px 3px;
+    border-top: black 1px solid;
+    padding-top: 10px;
+}
+
+.logo-and-contact img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: auto;
+    padding: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.contact-info address, .chamber-contact-info address {
+    font-style: normal;
+    text-align: left;
+}
+
+.contact-info address, .contact-info a .chamber-contact-info address, .chamber-contact-info a {
+    text-decoration: none;
+    color: black;
+    font-size: .7rem;
+}
+
+/*-----Footer-----*/
+footer {
+    background: var(--main-color);
+}
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.icons a:hover {
+    background-color: var(--green-color);
+}
+
+.icons img {
+    width: 22px;
+    height: 22px;
+}

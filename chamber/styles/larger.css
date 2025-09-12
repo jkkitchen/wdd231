@@ -1,0 +1,57 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 110px;
+    }
+
+
+    /*-----Header-----*/
+    header {
+        display: flex;   
+        justify-content: space-between;   
+        background: var(--main-color);
+    }
+
+    .logo-header {
+        padding-left: 0.5rem;
+    }
+
+
+    /*-----Navigation-----*/
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+        margin: 0;
+        padding-right: 0.5rem;        
+    }
+
+    .navigation a {
+        color: black;
+        border: none;
+        font-family: var(--heading-font);
+        font-size: 1.1rem;
+    }
+
+    .navigation li.current {
+        text-decoration: underline;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;       
+        list-style-type: none;        
+        margin: 0;
+    }
+
+
+
+
+}
