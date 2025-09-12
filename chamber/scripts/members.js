@@ -58,6 +58,7 @@ function displayMembersGrid(members) {
         companyLogo.setAttribute("src", member.image);
         companyLogo.setAttribute("alt", `${member.name} logo`);
         companyLogo.setAttribute("loading", "lazy");
+        companyLogo.setAttribute("height", "50")
         companyName.textContent = member.name;
         companyAddress.textContent = `Address: ${member.address}`;
         companyPhone.setAttribute("href", `tel:${member.phonenumber}`);
@@ -85,17 +86,97 @@ function displayMembersGrid(members) {
 };
 
 function displayMembersList(members) {
-    //Create a table of businesses and information
-    members.forEach((member) => {        
+    //Create a list of businesses and information
+    members.forEach((member) => {
+        //Create elements
+        let listItem = document.createElement("div");
         let companyName = document.createElement("h2");
+        let companyAddress = document.createElement("address");
+        let companyPhone = document.createElement("a");
+        let companyWebsite = document.createElement("a");
 
         //Add content
         companyName.textContent = member.name;
+        companyAddress.textContent = `Address: ${member.address}`;
+        companyPhone.setAttribute("href", `tel:${member.phonenumber}`);
+        companyPhone.textContent = `Phone: ${member.phonenumber}`;
+        companyWebsite.setAttribute("href", member.websiteurl);
+        companyWebsite.textContent = `URL: ${member.websiteurl}`;
 
-        //Add to html file
-        businessDisplay.appendChild(companyName);
+        //Add elements to div
+        listItem.classList.add("list-items")
+        listItem.appendChild(companyName);
+        listItem.appendChild(companyAddress);
+        listItem.appendChild(companyPhone);
+        listItem.appendChild(companyWebsite);
+
+        //Add div to html
+        businessDisplay.appendChild(listItem);
     })
 };
+
+//Possible option of displaying list in a table
+// function displayMembersList(members) {
+//     //Create table
+//     const table = document.createElement("table");
+//     const thead = document.createElement("thead");
+//     const tbody = document.createElement("tbody");
+
+//     //Header row
+//     const headerRow = document.createElement("tr");
+//     const headers = ["Name", "Address", "Phone", "Website"];
+//     //Add items in headers to row
+//     headers.forEach(text => {
+//         const th = document.createElement("th");
+//         th.textContent = text;
+//         headerRow.appendChild(th);
+//     });
+//     //Add the headerRow to the thead
+//     thead.appendChild(headerRow);
+    
+    
+//     //Add data to table
+//     members.forEach((member) => {
+//         const row = document.createElement("tr");
+
+//         //Create data constants
+//         const companyNameCell = document.createElement("td");
+//         const companyAddressCell = document.createElement("td");
+//         const companyPhoneCell = document.createElement("td");
+//         const phoneLink = document.createElement("a");
+//         const companyWebsite = document.createElement("td");
+//         const websiteLink = document.createElement("a");
+        
+//         //Add content
+//         companyNameCell.textContent = member.name;
+//         companyAddressCell.textContent = member.address;
+//         phoneLink.setAttribute("href", `tel:${member.phonenumber}`);
+//         phoneLink.textContent = member.phonenumber;
+//         companyPhoneCell.appendChild(phoneLink);
+//         websiteLink.setAttribute("href", member.websiteurl);
+//         websiteLink.textContent = member.websiteurl;
+//         companyWebsite.appendChild(websiteLink);
+
+//         //Add to row
+//         row.appendChild(companyNameCell);
+//         row.appendChild(companyAddressCell);
+//         row.appendChild(companyPhoneCell);
+//         row.appendChild(companyWebsite);
+
+//         //Add row to table body
+//         tbody.appendChild(row);
+//     });
+
+//     //Combine the head and body into the table
+//     table.appendChild(thead);
+//     table.appendChild(tbody);
+
+//     //Add a class for styling the table in CSS
+//     table.classList.add("member-table");
+
+//     //Add the table to the html page
+//     businessDisplay.appendChild(table);
+// };
 
 //Set default view
 businessDisplay.classList.add('grid-view');
