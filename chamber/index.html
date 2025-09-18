@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenville Chamber of Commerce</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description"
+        content="Homepage for the Greenville Chamber of Commerce.">
+    <!--Link to Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+    <!--Facebook Meta Tags-->
+    <meta property="og:title" content="Greenville Chamber of Commerce Home Page">
+    <meta property="og:description"
+        content="A webapge highlighting some local businesses and other things relating to the Greenville Chamber of Commerce.">
+    <meta property="og:image" content="images/reedy-falls-locks.webp">
+    <meta property="og:url" content="https://jkkitchen.github.io/wdd231/chamber/index.html">
+    <!--Link to Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+    <!--Link to CSS Files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Link to JS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/current-weather.js" defer></script>
+    <script src="scripts/weather-forecast.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="chamber-header">
+            <div class="logo-header">
+                <img src="images/favicon.ico" alt="Site Logo" width="24" height="24">
+                <h1>Greenville Chamber of Commerce</h1>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li></li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-and-call">
+            <picture class="hero">
+                <source media="max-width:799px" srcset="images/greenville-small.webp">
+                <source media="min-width: 800px" srcset="images/greenville-large.webp">
+                <img src="images/greenville-large.webp" alt="Picture of Reedy Falls Park"> 
+            </picture>
+            <a class="call-to-action" href="#">Join the Greenville<br>Chamber of Commerce Today!</a>
+        </section>
+        <h1>Home</h1>
+        <section class="middle-blocks">
+            <div class="current-events">
+                <h2>Events</h2>
+            </div>
+            <div class="current-weather">                
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="">
+                <span id="current-temp"></span>      
+                <span id="weather-description"></span>
+                <span id="high-temp"></span>
+                <span id="low-temp"></span>
+                <span id="humidity"></span>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <span id="forecast-today"></span>
+                <span id="forecast-next-day"></span>
+                <span id="forecast-two-days"></span>
+            </div>
+        </section>
+        <section class="random-business-cards"></section>
+    </main>
+    <footer>
+        <div class="chamber-contact-info">
+            <p>Greenville Chamber of Commerce</p>
+            <address>
+                550 S Main Street<br>
+                Greenville, SC 29601
+            </address>
+            <a href="mailto:info@greenvillechamber.com">info@greenvillechamber.com</a>
+            <a href="tel:+8642421050">(864) 242-1050</a>
+        </div>
+        <div class="icons">
+            <a href="instagram.com"><img src="images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="Linked In Logo" width="16" height="16"></a>
+            <a href="facebook.com"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
+        </div>
+        <div class="wdd231-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jessica Kitchen</p>
+            <p>&copy;<span id="currentyear"></span> Greenville Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
