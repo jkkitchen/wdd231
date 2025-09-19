@@ -51,6 +51,11 @@
         margin: 0;
     }
 
+    /*-----Main: Index-----*/
+    .call-to-action {        
+        left: 65%;
+    }
+
     /*-----Footer-----*/
     .chamber-contact-info {
         padding: 10px 0 10px 20px;

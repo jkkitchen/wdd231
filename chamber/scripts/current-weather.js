@@ -16,7 +16,7 @@ const myLong = "-82.40";
 
 //Link to openweathermap.org
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
-const forecastWeatherUrl = `https://api.openweathermap.org/data/3.0/onecall/overview?lat=${myLat}&lon=${myLong}&appid=${myKey}`;
+const forecastWeatherUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
 //Current Weather Functions
 async function apiFetchCurrentWeather() {
@@ -36,10 +36,10 @@ async function apiFetchCurrentWeather() {
 //Display the JSON Data onto web page
 function displayCurrentWeatherResults(data) {          
     let desc = data.weather[0].description;
-    const iconsrc = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;    
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;    
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;    
+    currentTemp.innerHTML = `Temperature: ${data.main.temp}&deg;F`;    
     weatherDescription.textContent = `${desc}`;
     highTemp.innerHTML = `High: ${data.main.temp_max}&deg;F`;
     lowTemp.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
@@ -62,9 +62,54 @@ async function apiFetchForecast() {
     }
 };
 
+
+function getMaxTempsPerDay(data) {
+    const dailyTemps = {};
+
+    data.list.forEach(entry => {
+        const date = new Date(entry.dt_txt);
+
+        //Extract the day string
+        const day = date.toISOString().split('T')[0];
+
+        //Initialize if it doesn't exist
+        if (!dailyTemps[day]) {
+            dailyTemps[day] = [];
+        }
+
+        dailyTemps[day].push(entry.main.temp_max);
+    });
+
+    //Find max temp for each day
+    const maxTemps = {};
+    for (const day in dailyTemps) {
+        maxTemps[day] = Math.max(...dailyTemps[day]);
+    }
+
+    return maxTemps;
+}
+
 //Display the JSON Data onto web page
 function displayForecastResults(data) {
-    const forecastToday = data.highTemp;
+    //Call max temps function
+    const maxTemps = getMaxTempsPerDay(data);
+
+    //Get the dates and sort them
+    const days = Object.keys(maxTemps).sort();
+
+    //Set the 3 days
+    const today = days[0];
+    const tomorrow = days[1];
+    const twoDaysOut = days[2];
+
+    //Format weekday names    
+    const tomorrowName = new Date(tomorrow).toLocaleDateString('en-US', { weekday: 'long' });
+    const twoDaysOutName = new Date(twoDaysOut).toLocaleDateString('en-US', { weekday: 'long' });
+      
+    //Display the day and temperature data
+    forecastToday.innerHTML = `Today: ${maxTemps[today]}&deg;F`;    
+    forecastTomorrow.innerHTML = `${tomorrowName}: ${maxTemps[tomorrow]}&deg;F`;
+    forecastTwoDays.innerHTML = `${twoDaysOutName}: ${maxTemps[twoDaysOut]}&deg;F`;
 };
 
 
