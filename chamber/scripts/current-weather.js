@@ -1,13 +1,16 @@
 //Select all HTML elements
+//Current weather
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const weatherDescription = document.querySelector('#weather-description');
 const highTemp = document.querySelector('#high-temp');
 const lowTemp = document.querySelector('#low-temp');
 const humidity = document.querySelector('#humidity');
+//Forecast
 const forecastToday = document.querySelector('#forecast-today');
 const forecastTomorrow = document.querySelector('#forecast-next-day');
 const forecastTwoDays = document.querySelector('#forecast-two-days');
+
 
 //Create variables for the URL
 const myKey = "815579dff197464b572575f1e2216f72";
@@ -17,6 +20,8 @@ const myLong = "-82.40";
 //Link to openweathermap.org
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 const forecastWeatherUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+
+
 
 //Current Weather Functions
 async function apiFetchCurrentWeather() {
@@ -46,6 +51,9 @@ function displayCurrentWeatherResults(data) {
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
 };
 
+
+
+
 //Weather Forecast Functions
 async function apiFetchForecast() {
     try {
@@ -62,7 +70,7 @@ async function apiFetchForecast() {
     }
 };
 
-
+//Sort through the data for forecasts and find the maximum temperature for each day
 function getMaxTempsPerDay(data) {
     const dailyTemps = {};
 
@@ -72,7 +80,7 @@ function getMaxTempsPerDay(data) {
         //Extract the day string
         const day = date.toISOString().split('T')[0];
 
-        //Initialize if it doesn't exist
+        //Checks if there is already an array for that day and creates a new array for each day to store temperatures
         if (!dailyTemps[day]) {
             dailyTemps[day] = [];
         }
@@ -111,6 +119,7 @@ function displayForecastResults(data) {
     forecastTomorrow.innerHTML = `${tomorrowName}: ${maxTemps[tomorrow]}&deg;F`;
     forecastTwoDays.innerHTML = `${twoDaysOutName}: ${maxTemps[twoDaysOut]}&deg;F`;
 };
+
 
 
 //Run the program
