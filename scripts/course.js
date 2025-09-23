@@ -123,6 +123,23 @@ courseWDDButton.addEventListener("click", () => {
     creditNumberDisplayed(courseListWDD);
 });
 
+// Create variables for modals
+const myclose = document.querySelector("#closeModal");
+const mydialog = document.querySelector("#course-details");
+const modalHeading = document.querySelector("#modalHeading");
+const modalClassName = document.querySelector('#course-text h3');
+const modalCredits = document.querySelector('#course-credits');
+const modalCertificate = document.querySelector("#course-certificate");
+const modalDescription = document.querySelector("#course-description");
+const modalTechnology = document.querySelector("#technology");
+
+
+//Add event listener for button to close modals
+myclose.addEventListener("click", () => {
+    mydialog.close();
+});
+
+
 //Use function to create each course for display
 function displayCourse(courseList) {
     //Select class from index.html
@@ -142,6 +159,22 @@ function displayCourse(courseList) {
 
         //Add the course to the courses div in the html file
         container.appendChild(courseName);
+
+        //Add event listener and populate elements in dialog
+        courseName.addEventListener("click", () => {
+            modalHeading.textContent = `${course.subject} ${course.number}`;
+            modalClassName.innerHTML = course.title;
+            modalCredits.innerHTML = course.credits;
+            modalCertificate.innerHTML = course.certificate;
+            modalDescription.innerHTML = course.description;
+            //Use join for technology to display all items in list
+            const listTechnology = course.technology;
+            modalTechnology.innerHTML = "Technology: " + listTechnology.join(", ");
+
+            //Display modal
+            mydialog.showModal();
+
+        });
     });
 }
 
@@ -157,25 +190,25 @@ function creditNumberDisplayed(courseList) {
     creditNumber.textContent = `Credits Required: ${totalCredits}`;
 };
 
-//Write a function to display the modal
-function displayCourseDetails(course) {
-    courseDetails.innerHTML = '';
-    courseDetails.innerHTML = `
-    <button id="closeModal">❌</button>
-    <h2>${course.subject} ${course.number}</h2>
-    <h3>${course.title}</h3>
-    <p><strong>Credits</strong>: ${course.credits}</p>
-    <p><strong>Certificate</strong>: ${course.certificate}</p>
-    <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
-  `;
-    courseDetails.showModal();
+// //Write a function to display the modal
+// function displayCourseDetails(course) {
+//     courseDetails.innerHTML = '';
+//     courseDetails.innerHTML = `
+//     <button id="closeModal">❌</button>
+//     <h2>${course.subject} ${course.number}</h2>
+//     <h3>${course.title}</h3>
+//     <p><strong>Credits</strong>: ${course.credits}</p>
+//     <p><strong>Certificate</strong>: ${course.certificate}</p>
+//     <p>${course.description}</p>
+//     <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+//   `;
+//     courseDetails.showModal();
 
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-    });
-}
+//     closeModal.addEventListener("click", () => {
+//         courseDetails.close();
+//     });
+// }
 
-courseDiv.addEventListener('click', () => {
-    displayCourseDetails(course);
-});
+// courseDiv.addEventListener('click', () => {
+//     displayCourseDetails(course);
+// });
