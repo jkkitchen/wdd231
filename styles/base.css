@@ -216,6 +216,10 @@ dialog button {
     border: 1px solid rgb(0 0 0 / 10%);
 }
 
+#course-text > p {
+    text-align: left;
+}
+
 /*-----Footer-----*/
 footer {
     background-color: var(--pink-color);

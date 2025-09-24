@@ -164,8 +164,8 @@ function displayCourse(courseList) {
         courseName.addEventListener("click", () => {
             modalHeading.textContent = `${course.subject} ${course.number}`;
             modalClassName.innerHTML = course.title;
-            modalCredits.innerHTML = course.credits;
-            modalCertificate.innerHTML = course.certificate;
+            modalCredits.innerHTML = `Credits: ${course.credits}`;
+            modalCertificate.innerHTML = `Certificate: ${course.certificate}`;
             modalDescription.innerHTML = course.description;
             //Use join for technology to display all items in list
             const listTechnology = course.technology;
