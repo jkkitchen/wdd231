@@ -1,0 +1,68 @@
+//Constant variable that contains JSON data on the Chamber of Commerce membership levels
+const membershipFile = 'data/memberships.json';
+
+//Query Selectors
+const membershipDialog = document.querySelector("#mydialog");
+const membershipTitle = document.querySelector("#mydialog h2");
+const membershipClose = document.querySelector("#close-button");
+const membershipInfo = document.querySelector("#mydialog p");
+const membershipBenefits = document.querySelector("#mydialog ul");
+
+//Add event listener for closing
+membershipClose.addEventListener("click", () => {
+    membershipDialog.close();
+});
+
+//Create function to display information about each membership level.
+function displayMembership(membershipList) {
+    //Select class from join.html
+    const showMembershipsHere = document.querySelector("#membership-levels");
+
+    //Clear before each button is pushed so new arrays can be made
+    showMembershipsHere.innerHTML = '';
+
+    //Create content
+    membershipList.forEach(membership => {
+        //Create div for each membership level
+        let membershipsDiv = document.createElement("div");
+
+        //Create name and add button
+        let membershipName = document.createElement("h2");
+        membershipName.textContent = membership.level;
+        
+        const openButton = document.createElement("button");
+        openButton.innerText = "Learn More";
+        openButton.classList = "open-button";
+   
+        //Append name and button to div
+        membershipsDiv.appendChild(membershipName);
+        membershipsDiv.appendChild(openButton);
+        
+        //Add the membership div to the larger div in the html file
+        showMembershipsHere.appendChild(membershipsDiv);
+
+        //Add event listener for the open buttons and populate elements in dialog
+        openButton.addEventListener("click", () => {
+            membershipTitle.textContent = membership.level;
+            membershipInfo.innerHTML = membership.cost;
+            
+            //Clear existing list of benefits:
+            membershipBenefits.innerHTML = '';
+            
+            //Create list of benefits
+            membership.benefits.forEach(benefit => {
+                const li = document.createElement("li");
+                li.textContent = benefit;
+                membershipBenefits.appendChild(li);
+            })
+            
+            
+
+            //Display modal
+            mydialog.showModal();
+
+        });
+    });
+}
+
+displayMembership(membershipFile);

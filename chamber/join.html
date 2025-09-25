@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenville Chamber of Commerce Home</title>
+    <title>Greenville Chamber of Commerce Joining Page</title>
     <meta name="author" content="Jessica Kitchen">
-    <meta name="description"
-        content="Homepage for the Greenville Chamber of Commerce.">
+    <meta name="description" content="Webpage with information about membership levels and sign-up form for the Greenville Chamber of Commerce.">
     <!--Link to Favicon-->
     <link rel="icon" href="images/favicon.ico">
     <!--Facebook Meta Tags-->
-    <meta property="og:title" content="Greenville Chamber of Commerce Home Page">
+    <meta property="og:title" content="Greenville Chamber of Commerce Sign-Up Page">
     <meta property="og:description"
-        content="A webpage highlighting some local businesses and other things relating to the Greenville Chamber of Commerce.">
+        content="Webpage with information and a sign-up form for those interested in joining the Greenville Chamber of Commerce">
     <meta property="og:image" content="images/reedy-falls-locks.webp">
-    <meta property="og:url" content="https://jkkitchen.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://jkkitchen.github.io/wdd231/chamber/join.html">
     <!--Link to Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,9 +27,8 @@
     <link rel="stylesheet" href="styles/larger.css">
     <!--Link to JS Files-->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/dates.js" defer></script>    
-    <script src="scripts/current-weather.js" defer></script>
-    <script src="scripts/random-members.js" defer></script>    
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/membership-modal.js" defer></script>
 </head>
 
 <body>
@@ -44,57 +42,43 @@
         </div>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero-and-call">
-            <picture class="hero">
-                <source media="(max-width:799px)" srcset="images/greenville-small.webp">
-                <source media="(min-width: 800px)" srcset="images/greenville-large.webp">
-                <img src="images/greenville-large.webp" alt="Picture of Reedy Falls Park"> 
-            </picture>
-            <a class="call-to-action" href="#">Join the Greenville<br>Chamber of Commerce Today!</a>
+        <div class="form">
+
         </div>
-        <h1>Home</h1>
-        <section class="middle-blocks">
-            <div class="current-events">
-                <h2>Events</h2>
-                <div class="events">
-                    <ul>
-                        <li>Oct 3: Chamber of Commerce Board Meeting</li>
-                        <li>Oct 20: Networking Happy Hour</li>
-                        <li>Nov 1: Small Business Seminar</li>
-                    </ul>
-                </div>
+        <div id="membership-levels">
+            <div id="non-profit">
+                <h2>Non Profit Membership Level</h2>
+                <button id="non-profit-button">Learn More</button>
             </div>
-            <div class="current-weather">                
-                <h2>Current Weather</h2>
-                <div class="weather-grid-1">
-                    <img id="weather-icon">
-                    <span id="weather-description"></span>
-                </div>
-                <div class="weather-grid-2">
-                    <span id="current-temp"></span>               
-                    <span id="high-temp"></span>
-                    <span id="low-temp"></span>
-                    <span id="humidity"></span>
-                </div>
+            <div id="bronze">
+                <h2>Bronze Membership Level</h2>
+                <button id="bronze-button">Learn More</button>
             </div>
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <div class="forecast-entries">
-                    <span id="forecast-today"></span>
-                    <span id="forecast-next-day"></span>
-                    <span id="forecast-two-days"></span>
-                </div>
+            <div id="silver">
+                <h2>Silver Membership Level</h2>
+                <button id="silver-button">Learn More</button>
             </div>
-        </section>
-        <div class="random-business-cards"></div>
+            <div id="gold">
+                <h2>Gold Membership Level</h2>
+                <button id="gold-button">Learn More</button>
+            </div>
+            <dialog id="mydialog">
+                <div>
+                    <h2></h2>
+                    <p></p>
+                    <ul></ul>
+                    <button id="close-button"></button>
+                </div>
+            </dialog>
+        </div>
     </main>
     <footer>
         <div class="chamber-contact-info">

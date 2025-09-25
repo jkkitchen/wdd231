@@ -1,0 +1,48 @@
+{
+    "memberships": [
+        {
+            "level": "Non-Profit Membership Level",
+            "cost": "$500/month",
+            "benefits": [
+                "Monthly meeting with other businesses in Greenville.",
+                "Discounts on seasonal tickets with Greenville sports teams.",
+                "One seat on the Chamber of Commerce Board of Directors."
+            ]
+        },
+        {
+            "level": "Bronze",
+            "cost": "$1,500/month",
+            "benefits": [
+                "Monthly meeting with other businesses in Greenville.",
+                "Discounts on seasonal tickets with Greenville sports teams.",
+                "Can participate in up to two training sessions per year.",
+                "Two seats on the Chamber of Commerce Board of Directors."           
+            ]
+        },
+        {
+            "level": "Silver",
+            "cost": "$3,000/month",
+            "benefits": [
+                "Monthly meeting with other businesses in Greenville.",
+                "Discounts on seasonal tickets with Greenville sports teams.",
+                "Can participate in up to four training sessions per year.",
+                "Advertising on Chamber of Commerce homepage.",
+                "Discounts on advertising on and around city property.",
+                "Two seats on the Chamber of Commerce Board of Directors."
+            ]
+        },
+        {
+            "level": "Gold",
+            "cost": "$5,000/month",
+            "benefits": [
+                "Monthly meeting with other businesses in Greenville.",
+                "Discounts on seasonal tickets with Greenville sports teams.",
+                "Can participate in up to six training sessions per year.",
+                "Advertising on Chamber of Commerce homepage.",
+                "Discounts on advertising on and around city property.",
+                "Two seats on the Chamber of Commerce Board of Directors.",
+                "Members can run for president of the Board of Directors."
+            ]
+        }
+    ]
+}
