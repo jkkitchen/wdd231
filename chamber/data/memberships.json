@@ -10,7 +10,7 @@
             ]
         },
         {
-            "level": "Bronze",
+            "level": "Bronze Membership Level",
             "cost": "$1,500/month",
             "benefits": [
                 "Monthly meeting with other businesses in Greenville.",
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "level": "Silver",
+            "level": "Silver Membership Level",
             "cost": "$3,000/month",
             "benefits": [
                 "Monthly meeting with other businesses in Greenville.",
@@ -32,7 +32,7 @@
             ]
         },
         {
-            "level": "Gold",
+            "level": "Gold Membership Level",
             "cost": "$5,000/month",
             "benefits": [
                 "Monthly meeting with other businesses in Greenville.",
