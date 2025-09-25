@@ -28,7 +28,7 @@
     <!--Link to JS Files-->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/membership-modal.js" defer></script>
+    <script src="scripts/membership-modal.js" defer></script>    
 </head>
 
 <body>
@@ -51,13 +51,34 @@
     </header>
     <main>
         <div class="form">
-
+            <h2>Membership Application Form</h2>
+            <form method="GET" action="thanks.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Last Name"></label>
+                <label>Title <input type="text" name="title" autocomplete="title" title="Organizational Title" placeholder="Organizational Title"></label>
+                <label>Email <input type="email" name="email" required placeholder="john123@gmail.com" title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                <label>Business Name <input type="text" name="business-name" required autocomplete="business-name" title="Business Name" placeholder="Business/Organization Name"></label>
+                <label>Business Description <textarea name="description" title="Description of your business." rows="3" cols="40"></textarea></label>
+            
+            
+                <h3>Select Membership Level</h3>
+                <label><input type="radio" name="membership" value="Non-Profit" checked> Non-Profit Membership</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>                      
+                
+                <input type="hidden" name="timestamp" id="form-timestamp">               
+            
+                <input type="submit" value="Join the Chamber of Commerce">
+            </form>
         </div>
         <div class="membership-display">
+            <h2>Membership Levels</h2>
             <div id="membership-levels"></div>
             <dialog id="mydialog">
                 <div>
-                    <h2></h2>
+                    <h3></h3>
                     <p></p>
                     <ul></ul>
                     <button id="close-button">Close</button>

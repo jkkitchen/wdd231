@@ -15,7 +15,7 @@ getMembershipData();
 
 //Query Selectors for Modal
 const membershipDialog = document.querySelector("#mydialog");
-const membershipTitle = document.querySelector("#mydialog h2");
+const membershipTitle = document.querySelector("#mydialog h3");
 const membershipClose = document.querySelector("#close-button");
 const membershipInfo = document.querySelector("#mydialog p");
 const membershipBenefits = document.querySelector("#mydialog ul");
@@ -39,7 +39,7 @@ function displayMembership(membershipList) {
         let membershipsDiv = document.createElement("div");
 
         //Create name and "Learn More" button
-        let membershipName = document.createElement("h2");
+        let membershipName = document.createElement("h3");
         membershipName.textContent = membership.level;
         const openButton = document.createElement("button");
         openButton.innerText = "Learn More";
@@ -72,4 +72,3 @@ function displayMembership(membershipList) {
         });
     });
 }
-
