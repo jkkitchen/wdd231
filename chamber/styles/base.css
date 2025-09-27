@@ -8,6 +8,13 @@
     --text-color: black;
 }
 
+@font-face {
+    font-family: 'Newsreader';
+    src: url('…');
+    font-display: swap;
+}
+
+
 /*-----Header-----*/
 .chamber-header {
     background: var(--main-color);
@@ -29,6 +36,7 @@ h1 {
     display: block;
     margin: auto 5px;
 }
+
 
 /*-----Navigation-----*/
 .hamburger {
@@ -85,7 +93,8 @@ h1 {
     background-color: var(--accent-color-2);
 }
 
-/*-----Main-----*/
+
+/*-----Main: Directory-----*/
 .display-buttons {
     display: flex;
     justify-content: center;
@@ -100,11 +109,13 @@ h1 {
     padding: 7px;
     background: var(--accent-color);
     color: white;
+    border-radius: 2rem;
 }
 
 h1 {
     font-size: 2rem;
 }
+
 
 /*-----Main: Index-----*/
 .hero-and-call {
@@ -199,6 +210,11 @@ h1 {
     padding: .15rem;
 }
 
+#weather-description {
+    text-align: center;
+    margin-top: 0;
+}
+
 .forecast-entries {
     grid-column: 1/3;
     display: flex;
@@ -221,6 +237,7 @@ h1 {
     font-family: var(--text-font);
     text-align: center;
 }
+
 
 /*-----Main: Directory Cards-----*/
 .grid-view {
@@ -264,8 +281,11 @@ h1 {
 .contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: flex-start;    
+}
+
+.contact-info p {
+    text-align: left;
 }
 
 /*-----Main: List-----*/
@@ -283,12 +303,150 @@ h1 {
     margin-bottom: 2px;
 }
 
-/*----Main: List and Grid-----*/
+
+/*----Main: Index List and Grid-----*/
 .contact-info address,
 .contact-info a,
 .list-items address,
 .list-items a {
     font-family: var(--text-font);
+}
+
+
+/*-----Main: Join Form-----*/
+form {
+    margin: 1rem 2%;
+
+    label {
+        display: block;        
+        padding-top: .2rem;
+        font-size: 1rem;
+        font-family: var(--text-font);
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        color: var(--accent-color);
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    input[type=text],
+    input[type=tel],    
+    input[type=email],
+    textarea {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: 1px solid var(--accent-color-3);
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: var(--accent-color);
+        font-size: 1rem;
+        color: black;
+        width: 250px;
+        font-family: var(--text-font);
+    }
+
+    input:required {
+        border-left-color: #d70000;
+    }
+
+    input:focus {
+        border-left-color: black;
+        outline: none;
+    }
+
+    input:required:valid {
+        border-left-color: green;
+    }
+
+    input[type=submit] {
+        border: none;
+        text-align: center;
+        background-color: var(--accent-color);
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        font-family: var(--text-font);        
+        appearance: none;
+    }
+}
+
+
+/*-----Thanks.html-----*/
+#confirmation {
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+
+/*-----Main: Join Membership Levels-----*/
+#join {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+#join h2 {
+    text-align: center;
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: var(--main-color);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        background-color: var(--accent-color-2);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.level-box {
+    background-color: var(--accent-color-2);
+    margin: 0 5px 10px 5px; 
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 6px 8px 2px rgba(0, 0, 0, 0.25);
+    animation: fadeColor 3s ease-in-out 1 forwards;       
+}
+
+.level-box h3 {
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+.level-box button {
+    width: 120px;
+    display: block;
+    margin: 0 auto 15px auto;
+    background-color: var(--accent-color);
+    color: white;
+    font-family: var(--text-font);
+    padding: 5px;
+    border-radius: 1rem;        
+}
+
+#mydialog h3, #mydialog p {
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+#mydialog ul {
+    font-family: var(--text-font);
+}
+
+#close-button {
+    display: block;
+    margin: 0 auto;
+    font-family: var(--text-font);
+    width: 150px;    
 }
 
 /*-----Main and Footer-----*/
@@ -312,6 +470,7 @@ h1 {
     font-size: .7rem;
     font-size: 0.9rem;
 }
+
 
 /*-----Footer-----*/
 footer {

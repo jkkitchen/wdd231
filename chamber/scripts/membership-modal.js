@@ -37,6 +37,7 @@ function displayMembership(membershipList) {
     membershipList.forEach(membership => {
         //Create div for each membership level
         let membershipsDiv = document.createElement("div");
+        membershipsDiv.classList = "level-box";
 
         //Create name and "Learn More" button
         let membershipName = document.createElement("h3");
