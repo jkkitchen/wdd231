@@ -8,12 +8,6 @@
     --text-color: black;
 }
 
-@font-face {
-    font-family: 'Newsreader';
-    src: url('…');
-    font-display: swap;
-}
-
 
 /*-----Header-----*/
 .chamber-header {
@@ -321,6 +315,7 @@ form {
 form label {
     display: block;        
     padding-top: .2rem;
+    margin-bottom: 0.75rem;
     font-size: 1rem;
     font-family: var(--text-font);
 }
@@ -360,6 +355,10 @@ input:focus {
 
 input:required:valid {
     border-left-color: green;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
 }
 
 input[type=submit] {
