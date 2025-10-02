@@ -1,0 +1,50 @@
+export const places = [
+    {
+        "name": "Falls Park on the Reedy / Liberty Bridge",
+        "address": "601 S Main St, Greenville, SC 29601",
+        "description": "A gorgeous urban oasis in downtown Greenville featuring flowing waterfalls, manicured gardens, the iconic Liberty Bridge, and plenty of space to relax and take in the river scenery. Perfect for picnics, interviews, and casual strolls.",
+        "picture": "images/reedy-river-bridge.webp"
+    },
+    {
+        "name": "Prisma Health Swamp Rabbit Trail",
+        "address": "Trail runs from Greenville to Travelers Rest, SC",
+        "description": "This scenic 19.9\u2011mile multi\u2011use rail trail connects downtown Greenville to Travelers Rest. Ideal for biking, walking, and jogging while taking in nature, public art, and community hubs like Swamp Rabbit Cafe.",
+        "picture": "images/swamp-rabbit-trail.webp"
+    },
+    {
+        "name": "Paris Mountain State Park",
+        "address": "2401 State Park Rd, Greenville, SC 29609",
+        "description": "Just minutes from downtown, this state park offers mountainous trails, picnic spots, fishing in Lake Placid, and rich forestry. It's Greenville\u2019s backyard escape.",
+        "picture": "images/paris-mountain.webp"
+    },
+    {
+        "name": "Upcountry History Museum",
+        "address": "540 Buncombe St, Greenville, SC 29601",
+        "description": "A modern museum in downtown Greenville offering exhibits about the history and culture of the Upstate region through interactive displays and immersive storytelling.",
+        "picture": "images/upcountry-history-museum.webp"
+    },
+    {
+        "name": "Roper Mountain Science Center",
+        "address": "402 Roper Mountain Rd, Greenville, SC 29615",
+        "description": "A fun educational destination that includes a planetarium, observatory, live animal habitats, nature trails, and seasonal events. Great for family visits!",
+        "picture": "images/roper-mountain.webp"
+    },
+    {
+        "name": "The Peace Center",
+        "address": "300 S Main St, Greenville, SC 29601",
+        "description": "Greenville\u2019s premium performing arts facility, hosting hundreds of live shows yearly \u2014 from Broadway tours to symphonies, comedy, magic, and more. It includes concert halls, a theater, and an outdoor TD Stage.",
+        "picture": "images/peace-center.webp"
+    },
+    {
+        "name": "The Children\u2019s Museum of the Upstate",
+        "address": "300 College St, Greenville, SC 29601",
+        "description": "A large hands\u2011on museum packed with interactive and educational exhibits tailored to younger kids and curious visitors of all ages.",
+        "picture": "images/childrens-museum.webp"
+    },
+    {
+        "name": "Downtown Travelers Rest",
+        "address": "Main St, Travelers Rest, SC 29690",
+        "description": "A charming town just north of Greenville with a revitalized downtown, trail access, live music at Trailblazer Park, local dining, breweries, and indie shops. Highlights include the annual Farmers Market, Swamp Rabbit Brewery, Poinsett Bridge, and historic landmarks.",
+        "picture": "images/travelers-rest.webp"
+    }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenville Chamber of Commerce Discover Page</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description" content="Website showcasing local attractions found in Greenville, SC.">
+    <!--Link to Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+    <!--Facebook Meta Tags-->
+    <meta property="og:title" content="Greenville Chamber of Commerce Discover Greenville Page">
+    <meta property="og:description"
+        content="A webpage highlighting some local attractions in Greenville, SC.">
+    <meta property="og:image" content="images/reedy-falls-locks.webp">
+    <meta property="og:url" content="https://jkkitchen.github.io/wdd231/chamber/discover.html">
+    <!--Link to Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans&display=swap" rel="stylesheet">
+    <!--Link to CSS Files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Link to JS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/discovery-cards.js" type="module" defer></script>    
+    
+</head>
+
+<body>
+    <header>
+        <div class="chamber-header">
+            <div class="logo-header">
+                <img src="images/favicon.ico" alt="Site Logo" width="24" height="24">
+                <h1>Greenville Chamber of Commerce</h1>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Discover Greenville</h1>
+        <div class="local-attractions"></div>
+        <div class="last-visit-date"></div>
+    </main>
+    <footer>
+        <div class="chamber-contact-info">
+            <p>Greenville Chamber of Commerce</p>
+            <address>
+                550 S Main Street<br>
+                Greenville, SC 29601
+            </address>
+            <p>info@greenvillechamber.com</p>
+            <p>(864) 242-1050</p>
+        </div>
+        <div class="icons">
+            <a href="instagram.com"><img src="images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="Linked In Logo" width="16" height="16"></a>
+            <a href="facebook.com"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
+        </div>
+        <div class="wdd231-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jessica Kitchen</p>
+            <p>&copy;<span id="currentyear"></span> Greenville Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
