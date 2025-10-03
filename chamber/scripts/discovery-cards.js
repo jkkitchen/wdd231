@@ -15,13 +15,18 @@ function displayAttractions(locations) {
         let locationAddress = document.createElement("address");        
         let locationDescription = document.createElement("p");
 
+        //Add class to img to make hover effect easier
+        locationImage.classList.add('picture-hover-effect');
+
         //Add content to elements
         locationName.textContent = location.name;
         locationImage.setAttribute("src", location.picture);
         locationImage.setAttribute("alt", `${location.name} Picture`);
+        locationImage.setAttribute("width", 500);
+        locationImage.setAttribute("height", 227);
         locationImage.setAttribute("loading", "lazy");       
         locationAddress.textContent = location.address;
-        locationDescription.textContent = location.description;        
+        locationDescription.textContent = location.description;
 
         //Add elements to section
         card.classList.add("location-card");

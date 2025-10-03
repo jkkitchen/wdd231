@@ -81,33 +81,20 @@ h1 {
 
 .navigation li {
     color: var(--accent-color);
+    font-family: var(--text-font);
 }
 
 .navigation li.current {
     background-color: var(--accent-color-2);
 }
 
-
-/*-----Main: Directory-----*/
-.display-buttons {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.button {
-    margin: 5px;
-    width: 120px;
-    height: 40px;
-    font-family: var(--text-font);
-    padding: 7px;
-    background: var(--accent-color);
+/*-----Main-----*/
+main h1 {
+    background-color: black;
     color: white;
-    border-radius: 2rem;
-}
-
-h1 {
-    font-size: 2rem;
+    margin-top: 0;
+    padding: .6rem;
+    font-size: 1.4rem;
 }
 
 
@@ -233,71 +220,6 @@ h1 {
 }
 
 
-/*-----Main: Directory Cards-----*/
-.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5px;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.business-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    font-family: var(--text-font);
-    border: var(--accent-color) 1px solid;
-    box-shadow: 0 3px 3px #777;
-}
-
-.business-card h2 {
-    margin: 8px 0;
-}
-
-.logo-and-contact {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 0 3px 3px 3px;
-    border-top: black 1px solid;
-    padding-top: 10px;
-}
-
-.logo-and-contact img {
-    display: block;
-    margin: 0 auto;
-    height: 50px;
-    width: auto;
-    padding: 5px;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;    
-}
-
-.contact-info p {
-    text-align: left;
-}
-
-/*-----Main: List-----*/
-
-.list-items {
-    font-family: var(--text-font);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.list-items h2 {
-    margin-bottom: 2px;
-}
-
-
 /*----Main: Index List and Grid-----*/
 .contact-info address,
 .contact-info a,
@@ -308,14 +230,6 @@ h1 {
 
 
 /*-----Main: Join Form-----*/
-#join-h1 {
-    background-color: black;
-    color: white;
-    margin-top: 0;
-    padding: .6rem;
-    font-size: 1.4rem;
-}
-
 form {
     margin: 1rem 2%;
 }
@@ -381,7 +295,6 @@ input[type=submit] {
     font-family: var(--text-font);        
     appearance: none;
 }
-
 
 
 /*-----Thanks.html-----*/
@@ -460,10 +373,142 @@ input[type=submit] {
 
 /*-----Main: Discovery-----*/
 
+.location-card {
+    margin: 1rem 8px;
+    border: 1px solid black;
+    background-color: var(--accent-color-2);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+    "name"
+    "picture"
+    "description"
+    "address";
+}
+
+.location-card h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+    font-family: var(--heading-font);
+    border-bottom: 1px solid black;
+}
+
+.location-card img {
+    width: 100%;
+    grid-area: picture;
+}
+
+.location-card p {
+    margin: 1rem 10px;
+    grid-area: description;
+    font-family: var(--text-font);
+    font-size: .9rem;
+}
+
+.location-card address {
+    margin: 1rem 10px;
+    grid-area: address;
+    font-family: var(--text-font);
+    font-size: .9rem;
+}
+
+.last-visit-date {
+    background-color: black;
+    color: white;
+    font-family: var(--text-font);
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;    
+}
 
 
-/*-----Main and Footer-----*/
+/*-----Main: Directory-----*/
+.display-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
+.button {
+    margin: 5px;
+    width: 120px;
+    height: 40px;
+    font-family: var(--text-font);
+    padding: 7px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 2rem;
+}
+
+
+/*-----Main: Directory Cards-----*/
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    font-family: var(--text-font);
+    border: var(--accent-color) 1px solid;
+    box-shadow: 0 3px 3px #777;
+}
+
+.business-card h2 {
+    margin: 8px 0;
+}
+
+.logo-and-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 3px 3px 3px;
+    border-top: black 1px solid;
+    padding-top: 10px;
+}
+
+.logo-and-contact img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: auto;
+    padding: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-info p {
+    text-align: left;
+}
+
+
+/*-----Main: Directory List-----*/
+.list-items {
+    font-family: var(--text-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.list-items h2 {
+    margin-bottom: 2px;
+}
+
+
+/*-----Main: Directory and Footer-----*/
 .contact-info address,
 .chamber-contact-info address,
 .list-items address {

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
 
     header,
     main,
@@ -55,6 +55,24 @@
     .call-to-action {        
         left: 65%;
     }
+
+    /*-----Main: Discover-----*/
+
+    .local-attractions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .location-card img {
+        width: 150px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .picture-hover-effect:hover {
+        transform: scale(1.1);
+    }
+
 
     /*-----Footer-----*/
     .chamber-contact-info {
