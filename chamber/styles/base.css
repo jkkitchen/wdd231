@@ -385,7 +385,8 @@ input[type=submit] {
     "name"
     "picture"
     "description"
-    "address";
+    "address"
+    "button";
 }
 
 .location-card h2 {
@@ -414,6 +415,18 @@ input[type=submit] {
     font-size: .9rem;
 }
 
+.location-card button {
+    grid-area: button;
+    width: 100px;
+    font-family: var(--text-font);
+    background-color: var(--accent-color);
+    color: white;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 1rem;
+    
+}
+
 .last-visit-date {
     background-color: black;
     color: white;
@@ -422,6 +435,8 @@ input[type=submit] {
     text-align: center;
     font-size: 1rem;    
 }
+
+
 
 
 /*-----Main: Directory-----*/
