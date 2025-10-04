@@ -1,0 +1,32 @@
+:root {
+    --main-font: "Winky Sans";
+    --text-font: Inter;
+    --main-color: #0A5C2C;
+    --butterscotch: #E2B06A;
+    --gray: #2B292E;
+    --pink: #A02745;
+}
+
+h1 {
+    font-family: var(--main-font);
+}
+
+p {
+    font-family: var(--text-font);
+}
+
+#green {
+    color: var(--main-color);
+}
+
+#butterscotch {
+    color: var(--butterscotch);
+}
+
+#gray {
+    color: var(--gray);
+}
+
+#pink {
+    color: var(--pink);
+}
