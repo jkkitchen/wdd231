@@ -1,0 +1,88 @@
+@media only screen and (min-width: 64rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1500px;
+        margin: 0 110px;
+    }
+    
+
+    /*-----Header-----*/
+    h1 {
+        font-size: 3rem;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        background: var(--main-color);
+        border-bottom: .15rem solid var(--butterscotch);
+    }
+
+    .logo-header {
+        padding-left: 0.5rem;
+    }
+
+
+    /*-----Navigation-----*/
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+        margin: 0;
+        padding-right: 0.5rem;        
+    }
+
+    .navigation a {
+        color: white;
+        border: none;
+        font-family: var(--heading-font);
+        font-size: 1.1rem;
+    }
+
+    .navigation li.current {
+        background-color: var(--pink);
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+    }
+
+
+    /*-----Index-----*/
+    .hero-pictures {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        max-height: 530px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-top: 0;
+        border-bottom: .15rem solid var(--butterscotch);
+    }
+
+    picture {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    /*-----Footer-----*/
+    .shop-contact-info {
+        padding: 10px 0 10px 20px;
+        align-items: flex-start;
+    }
+
+    .wdd231-info {
+        align-items: flex-end;
+        padding: 10px 20px 10px 0;
+    }
+}

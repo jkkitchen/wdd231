@@ -1,0 +1,157 @@
+:root {
+    --heading-font: "Winky Sans";
+    --text-font: Inter;
+    --main-color: #0A5C2C;
+    --butterscotch: #E2B06A;
+    --gray: #2B292E;
+    --pink: #A02745;
+}
+
+/*-----Header-----*/
+.project-header {
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;    
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    color: white;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-header img {
+    display: block;
+    margin: auto 5px;
+}
+
+
+/*-----Navigation-----*/
+.hamburger {
+    background: var(--main-color);
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    font-family: var(--text-font);
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    text-decoration: none;
+    background-color: var(--pink);
+    color: white;
+    border-bottom: solid 1px var(--butterscotch);
+    font-size: 1.3rem;
+    font-family: var(--text-font);
+}
+
+.navigation a:hover {
+    background-color: var(--main-color);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    color: var(--main-color);
+    font-family: var(--text-font);
+}
+
+.navigation li.current a {
+    background-color: var(--gray);
+}
+
+/*-----Index-----*/
+.hero-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-bottom: 0.25rem solid var(--butterscotch);
+}
+
+picture {
+    max-height: 530px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+/*-----Footer-----*/
+footer {
+    background: var(--main-color);
+    font-family: var(--heading-font);
+    font-size: 0.9rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.shop-contact-info,
+.wdd231-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.shop-contact-info *,
+.wdd231-info * {
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1px;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.icons a:hover {
+    background-color: var(--green-color);
+}
+
+.icons img {
+    width: 22px;
+    height: 22px;
+}
