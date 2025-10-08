@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 Final Project Shopping Page</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description" content="Piece and Love Quilt Shop Quilt Kits Available">
+    <!--Facebook Meta Tags-->
+    <meta property="og:title" content="Piece and Love Quilt Shop Quilt Kits Available">
+    <meta property="og:description"
+        content="A webpage with links to shop and classes as well as a monthly newsletter sign-up.">
+    <meta property="og:image" content="images/lella-boutique-quilt.webp">
+    <meta property="og:url" content="https://jkkitchen.github.io/wdd231/project/shop.html">
+    <!--Link to Favicon, using svg for webpage that is the same-->
+    <link rel="icon" href="images/heart-half.svg" type="image/svg+xml">
+    <!--Link to Google Fonts for Winky Sans and Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Winky+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!--Link to CSS Files-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!--Link to JS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>    
+</head>
+
+<body>
+    <header>
+        <div class="project-header">
+            <div class="logo-header">
+                <img src="images/heart-half.svg" alt="Site Logo" width="36" height="36">
+                <h1>Piece and Love Quilt Shop</h1>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="shop.html">Shop</a></li>
+                <li><a href="#.html">Classes/Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="quilt-kits"></div>
+    </main>
+    <footer>
+        <div class="shop-contact-info">
+            <p>Piece and Love Quilt Shop</p>
+            <address>
+                550 S Main Street<br>
+                Greenville, SC 29601
+            </address>
+            <p>pieceandlove@gmail.com</p>
+            <p>(864) 242-1023</p>
+        </div>
+        <div class="icons">
+            <a href="instagram.com"><img src="images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="Linked In Logo" width="16" height="16"></a>
+            <a href="facebook.com"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
+        </div>
+        <div class="wdd231-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jessica Kitchen</p>
+            <p>&copy;<span id="currentyear"></span> Piece and Love Quilt Shop</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

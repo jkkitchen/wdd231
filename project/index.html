@@ -6,6 +6,13 @@
     <title>WDD231 Final Project Home Page</title>
     <meta name="author" content="Jessica Kitchen">
     <meta name="description" content="Home Page for Quilt Shop Piece and Love, the Final Project of WDD 231">
+    <!--Facebook Meta Tags-->
+    <meta property="og:title" content="Piece and Love Quilt Shop Home Page">
+    <meta property="og:description" content="A webpage with links to shop and classes as well as a monthly newsletter sign-up.">
+    <meta property="og:image" content="images/lella-boutique-quilt.webp">
+    <meta property="og:url" content="https://jkkitchen.github.io/wdd231/project/index.html">
+    <!--Link to Favicon, using svg for webpage that is the same-->
+    <link rel="icon" href="images/heart-half.svg" type="image/svg+xml">
     <!--Link to Google Fonts for Winky Sans and Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +20,17 @@
     <!--Link to CSS Files-->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <!--Link to JS Files-->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
 </head>
 <body>
     <header>
         <div class="project-header">
             <div class="logo-header">
-                <img src="images/favicon.ico" alt="Site Logo" width="24" height="24">
+                <img src="images/heart-half.svg" alt="Site Logo" width="36" height="36">
                 <h1>Piece and Love Quilt Shop</h1>
             </div>
             <button id="ham-btn" class="hamburger" aria-label="Drop Down Menu"></button>
@@ -29,8 +38,8 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="#.html">Shop</a></li>
-                <li><a href="#.html">Classes and Services</a></li>                    
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#.html">Classes/Services</a></li>                    
             </ul>
         </nav>
     </header>
@@ -51,6 +60,24 @@
                 <source srcset="images/thimbleblossoms-quilt.webp" media="(max-width: 500px)">
                 <img src="images/thimbleblossoms-quilt.webp" alt="Picture of quilt with cottages and tulips">
             </picture>
+        </div>
+        <div id="newsletter-form">
+            <h2>Sign Up for Our Monthly Newsletter!</h2>
+            <form method="GET" action="thanks.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email"></label>
+            
+                <h3>What notifications would you like to receive?</h3>
+                <label><input type="checkbox" name="information" value="Sales" checked> Sales</label>
+                <label><input type="checkbox" name="information" value="Inventory"> New Inventory</label>
+                <label><input type="checkbox" name="information" value="Classes"> Monthly Class Schedule</label>
+
+                <input type="hidden" name="timestamp" id="form-timestamp">
+
+                <input type="submit" value="Sign Up for Newsletter">
+            </form>
         </div>
     </main>
     <footer>

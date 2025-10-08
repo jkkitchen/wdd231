@@ -1,0 +1,123 @@
+{
+    "fabric-collections": [
+        {
+            "name": "Agatha Road",
+            "designer": "Fig Tree and Co.",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "32",
+            "keyword": "Fall",
+            "image": "images/agatha-road.webp"            
+        },
+        {
+            "name": "Foraged, Found, and Hand Me Down",
+            "designer": "Fancy That Design House",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "38",
+            "keyword": "Fall",
+            "image": "images/foraged-found-and-hand-me-down.webp"
+        },
+        {
+            "name": "Abloom",
+            "designer": "Corey Yoder",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "39",
+            "keyword": "other",
+            "image": "images/abloom.webp"
+        },
+        {
+            "name": "Pumpkin Spice Gatherings",
+            "designer": "Primitive Gatherings",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "39",
+            "keyword": "Fall",
+            "image": "images/pumpkin-spice-gatherings.webp"
+        },
+        {
+            "name": "Hey Pumpkin",
+            "designer": "My Minds Eye",
+            "brand": "Riley Blake Designs",
+            "numberFabrics": "24",
+            "keyword": "Halloween",
+            "image": "images/hey-pumpkin.webp"
+        },
+        {
+            "name": "Beggar's Night",
+            "designer": "Sandy Gervais",
+            "brand": "Riley Blake Designs",
+            "numberFabrics": "27",
+            "keyword": "Halloween",
+            "image": "images/beggars-night.webp"
+        },
+        {
+            "name": "Halloween II",
+            "designer": "Rifle Paper Co.",
+            "brand": "Rifle Paper Co.",
+            "numberFabrics": "13",
+            "keyword": "Halloween",
+            "image": "images/halloween-ii.webp"
+        },
+        {
+            "name": "Starlight Spooks",
+            "designer": "Elena Amo",
+            "brand": "Paint Brush Studios",
+            "numberFabrics": "16",
+            "keyword": "Halloween",
+            "image": "images/starlight-spooks.webp"
+        },
+        {
+            "name": "Berry and Pine",
+            "designer": "Lella Boutique",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "32",
+            "keyword": "Christmas",
+            "image": "images/berry-and-pine.webp"
+        },
+        {
+            "name": "12 Days of Christmas",
+            "designer": "Cori Dantini",
+            "brand": "FreeSpirit Fabrics",
+            "numberFabrics": "8",
+            "keyword": "Christmas",
+            "image": "images/12-days-of-christmas.webp"
+        },
+        {
+            "name": "Adventale",
+            "designer": "Katarina Roccella",
+            "brand": "Art Gallery Fabrics",
+            "numberFabrics": "16",
+            "keyword": "Christmas",
+            "image": "images/adventale.webp"
+        },
+        {
+            "name": "Home Town Holiday",
+            "designer": "Lori Holt",
+            "brand": "Riley Blake Designs",
+            "numberFabrics": "42",
+            "keyword": "Christmas",
+            "image": "images/home-town-holiday.webp"
+        },
+        {
+            "name": "Summertime",
+            "designer": "Camille Roskelly",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "40",
+            "keyword": "other",
+            "image": "images/summertime.webp"
+        },
+        {
+            "name": "Floral Reef True Colors",
+            "designer": "Tula Pink",
+            "brand": "FreeSpirit Fabrics",
+            "numberFabrics": "28",
+            "keyword": "other",
+            "image": "images/floral-reef-true-colors.webp"
+        },
+        {
+            "name": "Delightfully Yours",
+            "designer": "Sherri and Chelsi",
+            "brand": "Moda Fabrics",
+            "numberFabrics": "36",
+            "keyword": "other",
+            "image": "images/delightfully-yours.webp"
+        }
+    ]}
