@@ -74,6 +74,18 @@
     }
 
 
+    /*-----Shop-----*/
+    #buttons {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #shop button {
+        width: 20%;
+    }
+
+
     /*-----Footer-----*/
     .shop-contact-info {
         padding: 10px 0 10px 20px;

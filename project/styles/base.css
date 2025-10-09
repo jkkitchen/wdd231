@@ -195,7 +195,51 @@ input[type=submit] {
 }
 
 
+/*-----Shop-----*/
+#shop {
+    background: var(--gray);
+    color: white;
+}
 
+#shop button {    
+    width: 60%;
+    height: 60px;
+    font-family: var(--text-font);    
+    background: var(--pink);
+    color: white;
+    border-radius: 2rem; 
+    margin-bottom: .4rem;   
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;        
+}
+
+.fabric-collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.fabric-card {
+    background: white;
+    color: black;
+    height: 450px;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    border: var(--butterscotch) 1px solid;
+    box-shadow: 0 3px 3px var(--butterscotch);
+}
+
+.fabric-card p {
+    font-family: var(--text-font);
+}
 
 /*-----Footer-----*/
 footer {
