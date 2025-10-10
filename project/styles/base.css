@@ -106,6 +106,14 @@ picture {
     overflow-y: hidden;
 }
 
+.last-visit-date {
+    background-color: var(--gray);
+    color: white;
+    font-family: var(--text-font);
+    text-align: center;
+    margin: 0;
+    padding: 0.3rem;
+}
 
 /*-----Index Form-----*/
 #newsletter-form {
@@ -120,8 +128,7 @@ h2 {
 }
 
 form {
-    margin: 1rem 2%;
-    ;
+    margin: 2rem 2%;    ;
 }
 
 form label {
@@ -134,6 +141,7 @@ form label {
 
 form h3 {
     font-size: 1.3rem;
+    font-family: var(--text-font);
     color: var(--accent-color);
     margin: 1.5rem 0 .2rem 0;
     border-bottom: 1px solid var(--main-color);
@@ -240,6 +248,96 @@ input[type=submit] {
 .fabric-card p {
     font-family: var(--text-font);
 }
+
+.fabric-card img:hover {
+    transform: scale(1.1);
+}
+
+
+/*-----Class-----*/
+#class-heading {
+    color: black;
+    background-color: var(--butterscotch);
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;    
+}
+
+
+.class-cards-section {
+    background-color: var(--butterscotch);
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.class-card {
+    background-color: white;
+    margin: 1rem 8px;
+    border: 1px solid black;    
+    border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    text-align: center;
+    box-shadow: 0 3px 3px var(--gray);
+    grid-template-areas:
+        "name"
+        "picture"
+        "date"
+        "time"
+        "cost"
+        "button";
+}
+
+.class-card h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+    font-family: var(--heading-font);    
+}
+
+.class-card img {
+    width: 100%;
+    grid-area: picture;
+    margin-bottom: 1rem;
+}
+
+
+.class-card p {
+    font-family: var(--text-font);
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+}
+
+.class-date {
+    grid-area: date;
+}
+
+.class-time {
+    grid-area: time;
+}
+
+.class-cost {    
+    grid-area: cost;    
+}
+
+.class-card button {
+    grid-area: button;
+    width: 150px;
+    padding: .3rem;
+    font-family: var(--text-font);
+    background-color: var(--gray);
+    color: white;
+    display: block;
+    margin: 1rem auto 1rem auto;
+    border-radius: 1rem;
+}
+
+dialog {
+    max-width: 500px;
+}
+
 
 /*-----Footer-----*/
 footer {

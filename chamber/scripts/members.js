@@ -40,7 +40,7 @@ listButton.addEventListener('click', () => {
     getMemberData();
 });
 
-//Function to create and dispaly member information, use if statement to determine whether the list or the cards are shown
+//Function to create and display member information, use if statement to determine whether the list or the cards are shown
 function displayMembersGrid(members) {
     //Create a card for each business
     members.forEach((member) => {

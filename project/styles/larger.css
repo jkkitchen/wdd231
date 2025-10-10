@@ -86,6 +86,39 @@
     }
 
 
+    /*-----Class-----*/
+    .class-cards-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .class-card {
+        margin: 1rem 8px;
+        border: 1px solid black;        
+        border-radius: 1rem;        
+        overflow: hidden;
+        display: grid;
+        text-align: center;
+        grid-template-areas:
+            "picture name"
+            "picture date"
+            "picture time"
+            "picture cost"
+            "picture button";
+    }
+
+
+    .class-card img {
+        width: 200px;
+        height: 100%;        
+    }
+
+    .class-card p {
+        margin-left: .3rem;
+        margin-right: .3rem;
+    }
+
+
     /*-----Footer-----*/
     .shop-contact-info {
         padding: 10px 0 10px 20px;
