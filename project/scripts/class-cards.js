@@ -21,7 +21,8 @@ function displayClasses(courses) {
         className.textContent = course.name;
         classImage.setAttribute("src", course.image);
         classImage.setAttribute("alt", `${course.name} Picture`);
-        classImage.setAttribute("width", 500);        
+        classImage.setAttribute("width", "500");
+        classImage.setAttribute("height", "500");
         classImage.setAttribute("loading", "lazy");        
         classDate.classList.add("class-date");
         classDate.textContent = `Date: ${course.date}`;

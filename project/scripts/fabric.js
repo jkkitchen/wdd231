@@ -88,7 +88,8 @@ function displayFabricCollections(fabrics) {
         fabricImage.setAttribute("src", fabric.image);
         fabricImage.setAttribute("alt", `${fabric.name} image`);
         fabricImage.setAttribute("loading", "lazy");
-        fabricImage.setAttribute("height", "250")        
+        fabricImage.setAttribute("height", "250");
+        fabricImage.setAttribute("width", "250");
         fabricDesigner.textContent = `Created by ${fabric.designer}`;
         fabricBrand.textContent = `${fabric.brand}`;
         numberFabrics.textContent = `Number of Fabrics in Collection: ${fabric.numberFabrics}`;        
