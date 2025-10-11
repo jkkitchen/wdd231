@@ -7,6 +7,16 @@
     --pink: #A02745;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+}
+
+h2 {
+    font-family: var(--heading-font);
+}
+
+
 /*-----Header-----*/
 .project-header {
     background: var(--main-color);
@@ -14,10 +24,13 @@
     justify-content: space-between;    
 }
 
-h1 {
-    font-size: 2.5rem;
+.header {
+    font-size: 2rem;
     font-family: var(--heading-font);
     color: white;
+    margin: 0;
+    align-self: center;
+    font-weight: bold;
 }
 
 .logo-header {
@@ -121,10 +134,6 @@ picture {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h2 {    
-    font-family: var(--heading-font);
 }
 
 form {
